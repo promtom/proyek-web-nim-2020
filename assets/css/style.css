@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+.judul {
+    color: #d3d3d3;
+    font-family: 'Nerko One', cursive;
+    font-size: 30px;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.backvote {
+    background-image: url("../img/bg01.png");
+    background-size: cover;
+    background-position: center;
+}
+
+p.angka{
+    color: rgb(110, 110, 110);
+    font-family: Comic Sans MS;
+    font-size: 20px;
+} 
+
+
+.iconhitam {
+    color: #fff;
+    background-color: #000;
+}

@@ -22,10 +22,16 @@ class Welcome extends CI_Controller {
 	// {
 	// 	$this->load->view('welcome_message');
 	// }
+	/*
+	public function index()
+	{
+		$this->load->view('welcome_message');
+	}
+	*/
 	function index(){
         $data['judul'] = "This is title";
         $data['konten'] = "This is contents";
-        $data['_view'] = "konten/index";
-        $this->load->view('main', $data);
+		$data['_view'] = "page/index";
+		$this->load->view('layouts/main', $data);
     }
 }

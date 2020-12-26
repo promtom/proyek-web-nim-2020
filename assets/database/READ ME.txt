@@ -1,0 +1,9 @@
+udah ada 2 akun
+
+akun pertama ialah akun admin dengan 
+	Username = admin
+	Password = admin
+
+akun kedua ialah akun user dengan 
+	Username = test
+	Password = qwerty

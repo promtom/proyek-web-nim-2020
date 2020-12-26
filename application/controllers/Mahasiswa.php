@@ -14,8 +14,8 @@ class Mahasiswa extends CI_Controller{
         $data['mahasiswa'] = $this->Mahasiswa_model->show_mahasiswa();
         $data['judul'] = "Tabel Mahasiswa";
         $data['konten'] = "List Mahasiswa";
-        $data['_view'] = 'konten/mahasiswa/index';
-        $this->load->view('main',$data);
+        $data['_view'] = 'page/mahasiswa/index';
+        $this->load->view('layouts/main', $data);
     }
 
     /*
@@ -37,10 +37,10 @@ class Mahasiswa extends CI_Controller{
             redirect('mahasiswa/index');
         }
         else {
-            $data['_view'] = 'konten/mahasiswa/add';
+            $data['_view'] = 'page/mahasiswa/add';
             $data['judul'] = "Tambah Mahasiswa";
             $data['konten'] = "Tambah Mahasiswa";
-            $this->load->view('main',$data);
+            $this->load->view('layouts/main', $data);
         }
     }  
 
@@ -62,17 +62,17 @@ class Mahasiswa extends CI_Controller{
                 redirect('mahasiswa/index');
             }
             else{
-                $data['_view'] = 'konten/mahasiswa/edit';
+                $data['_view'] = 'page/mahasiswa/edit';
                 $data['judul'] = "Edit Mahasiswa";
                 $data['konten'] = "Edit Mahasiswa";
-                $this->load->view('main',$data);
+                $this->load->view('layouts/main', $data);
             }
         }
         else {
             $data['code'] = '404';
             $data['ket'] = "Edit Mahasiswa gagal. ya iyalah datanya gak ada -_-";
             $data['back'] = "mahasiswa/";
-            $this->load->view('konten/eror',$data);
+            $this->load->view('page/eror',$data);
         }
     } 
 
@@ -87,7 +87,7 @@ class Mahasiswa extends CI_Controller{
             $data['code'] = '404';
             $data['ket'] = "Edit Mahasiswa gagal. ya iyalah datanya gak ada -_-";
             $data['back'] = "mahasiswa/";
-            $this->load->view('konten/eror',$data);
+            $this->load->view('page/eror',$data);
         }
     }
 
